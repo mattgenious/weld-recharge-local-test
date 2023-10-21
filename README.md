@@ -71,7 +71,7 @@ Ensure that the `WELD_API_KEY` value is kept secure and not shared publicly to m
 ### Testing with Postman
 
 1. Download and install [Postman](https://www.postman.com/).
-2. Create a new request in Postman with the method and URL matching your local server (e.g., POST `http://localhost:3000`).
+2. Create a new request in Postman with the method and URL matching your local server (e.g., GET `http://localhost:3000` or GET `http://localhost:3000/schema`).
 3. Send the request and observe the response from your server.
 
 ## Contributing
