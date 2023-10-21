@@ -31,15 +31,33 @@ Follow these instructions to set up the local environment on your machine.
    git push
    ```
 
-### Environment Setup
+## Environment and auth Setup
 
-1. Create a `.env` file in the root directory of the project.
-2. Add your API key to the `.env` file:
-   ```plaintext
-   RECHARGE_API_KEY=your_api_key_here
-   ```
+To ensure secure access to the server, an authorization mechanism is implemented using a Bearer token. Follow these steps to set up authorization:
+The `WELD_API_KEY` can be any placeholder value as long as it is the same in the .env file and the authorization header.
 
-### Running the Project
+### 1. Environment Variable Configuration:
+
+   - Create a `.env` file in the root directory of the project.
+   - Add your API keys to the `.env` file:
+     ```plaintext
+     RECHARGE_API_KEY=your_recharge_api_key_here
+     WELD_API_KEY=your_weld_api_key_here
+     ```
+
+### 2. Postman Configuration:
+   - When making requests to your server using Postman, you'll need to include the `WELD_API_KEY` as a Bearer token in the `authorization` header.
+   - In Postman, select the **Headers** tab in your request configuration.
+   - Set the key as `authorization` and the value as `Bearer YOUR_WELD_API_KEY`.
+
+### 3. Testing Authorization:
+   - With the `WELD_API_KEY` environment variable set and the `authorization` header configured in Postman, you should be able to make authorized requests to your server.
+   - If the token is incorrect, you'll receive a "Not authorized" error response.
+
+Ensure that the `WELD_API_KEY` value is kept secure and not shared publicly to maintain the security of your server.
+
+
+## Running the Project
 
 1. Install the necessary packages:
    ```bash
