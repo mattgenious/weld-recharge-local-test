@@ -17,7 +17,7 @@ const subscriptions = require("./community-connectors/recharge/subscriptions.js"
 
 app.use(express.json());
 
-app.get(["charges/", "charges/schema"], async (req, res) => {
+app.get(["/charges/", "/charges/schema"], async (req, res) => {
   try {
     await charges.handler(req, res);
   } catch (error) {
@@ -25,7 +25,7 @@ app.get(["charges/", "charges/schema"], async (req, res) => {
     res.status(500).send("Internal Server Error");
   }
 });
-app.get(["collections/", "collections/schema"], async (req, res) => {
+app.get(["/collections/", "/collections/schema"], async (req, res) => {
   try {
     await collections.handler(req, res);
   } catch (error) {
@@ -33,7 +33,7 @@ app.get(["collections/", "collections/schema"], async (req, res) => {
     res.status(500).send("Internal Server Error");
   }
 });
-app.get(["customers/", "customers/schema"], async (req, res) => {
+app.get(["/customers/", "/customers/schema"], async (req, res) => {
   try {
     await customers.handler(req, res);
   } catch (error) {
@@ -41,7 +41,7 @@ app.get(["customers/", "customers/schema"], async (req, res) => {
     res.status(500).send("Internal Server Error");
   }
 });
-app.get(["discounts/", "discounts/schema"], async (req, res) => {
+app.get(["/discounts/", "/discounts/schema"], async (req, res) => {
   try {
     await discounts.handler(req, res);
   } catch (error) {
@@ -49,7 +49,7 @@ app.get(["discounts/", "discounts/schema"], async (req, res) => {
     res.status(500).send("Internal Server Error");
   }
 });
-app.get(["metafields/", "metafields/schema"], async (req, res) => {
+app.get(["/metafields/", "/metafields/schema"], async (req, res) => {
   try {
     await metafields.handler(req, res);
   } catch (error) {
@@ -57,7 +57,7 @@ app.get(["metafields/", "metafields/schema"], async (req, res) => {
     res.status(500).send("Internal Server Error");
   }
 });
-app.get(["onetimes/", "onetimes/schema"], async (req, res) => {
+app.get(["/onetimes/", "/onetimes/schema"], async (req, res) => {
   try {
     await onetimes.handler(req, res);
   } catch (error) {
@@ -65,7 +65,7 @@ app.get(["onetimes/", "onetimes/schema"], async (req, res) => {
     res.status(500).send("Internal Server Error");
   }
 });
-app.get(["orders/", "orders/schema"], async (req, res) => {
+app.get(["/orders/", "/orders/schema"], async (req, res) => {
   try {
     await orders.handler(req, res);
   } catch (error) {
@@ -73,7 +73,7 @@ app.get(["orders/", "orders/schema"], async (req, res) => {
     res.status(500).send("Internal Server Error");
   }
 });
-app.get(["payment_methods/", "payment_methods/schema"], async (req, res) => {
+app.get(["/payment_methods/", "/payment_methods/schema"], async (req, res) => {
   try {
     await payment_methods.handler(req, res);
   } catch (error) {
@@ -81,7 +81,7 @@ app.get(["payment_methods/", "payment_methods/schema"], async (req, res) => {
     res.status(500).send("Internal Server Error");
   }
 });
-app.get(["plans/", "plans/schema"], async (req, res) => {
+app.get(["/plans/", "/plans/schema"], async (req, res) => {
   try {
     await plans.handler(req, res);
   } catch (error) {
@@ -89,7 +89,7 @@ app.get(["plans/", "plans/schema"], async (req, res) => {
     res.status(500).send("Internal Server Error");
   }
 });
-app.get(["products/", "products/schema"], async (req, res) => {
+app.get(["/products/", "/products/schema"], async (req, res) => {
   try {
     await products.handler(req, res);
   } catch (error) {
@@ -98,7 +98,7 @@ app.get(["products/", "products/schema"], async (req, res) => {
   }
 });
 app.get(
-  ["retention_strategies/", "retention_strategies/schema"],
+  ["/retention_strategies/", "/retention_strategies/schema"],
   async (req, res) => {
     try {
       await retention_strategies.handler(req, res);
@@ -108,7 +108,7 @@ app.get(
     }
   }
 );
-app.get(["subscriptions/", "subscriptions/schema"], async (req, res) => {
+app.get(["/subscriptions/", "/subscriptions/schema"], async (req, res) => {
   try {
     await subscriptions.handler(req, res);
   } catch (error) {
