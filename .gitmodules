@@ -1,0 +1,3 @@
+[submodule "community-connectors"]
+	path = community-connectors
+	url = https://github.com/mattgenious/community-connectors.git

@@ -1,0 +1,33 @@
+{
+  "name": "weld-recharge-local-test",
+  "version": "0.0.1",
+  "description": "Test utility for weld community connectors based on node",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mattgenious/weld-recharge-local-test.git"
+  },
+  "keywords": [
+    "weld",
+    "recharge",
+    "local",
+    "test",
+    "node",
+    "axios",
+    "community",
+    "connector"
+  ],
+  "author": "Matt Luccas Phaure Jensen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mattgenious/weld-recharge-local-test/issues"
+  },
+  "homepage": "https://github.com/mattgenious/weld-recharge-local-test#readme",
+  "dependencies": {
+    "axios": "^1.5.1",
+    "express": "^4.18.2"
+  }
+}
