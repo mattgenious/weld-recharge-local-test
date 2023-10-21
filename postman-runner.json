@@ -3,12 +3,10 @@
     {"prefix": "collections"},
     {"prefix": "customers"},
     {"prefix": "discounts"},
-    {"prefix": "metafields"},
     {"prefix": "onetimes"},
     {"prefix": "orders"},
     {"prefix": "payment_methods"},
     {"prefix": "plans"},
-    {"prefix": "products"},
     {"prefix": "retention_strategies"},
     {"prefix": "subscriptions"}
 ]
